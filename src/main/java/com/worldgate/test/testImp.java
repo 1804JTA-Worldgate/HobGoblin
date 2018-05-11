@@ -2,6 +2,7 @@ package com.worldgate.test;
 
 import com.worldgate.dao.BatchDaoImplementation;
 import com.worldgate.model.Batch;
+import com.worldgate.util.LogUtil;
 
 import java.util.Date;
 
@@ -14,7 +15,7 @@ public class testImp {
 
 
         BatchDaoImplementation BDao = new BatchDaoImplementation();
-
-        BDao.insertBatch(temp);
+        LogUtil.log.info(BDao);
+        //BDao.insertBatch(temp);
     }
 }

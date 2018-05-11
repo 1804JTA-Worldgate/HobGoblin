@@ -5,7 +5,14 @@
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
 
-    <welcome-file-list>
-        <welcome-file>dist/index.html</welcome-file>
-    </welcome-file-list>
+    <servlet>
+        <servlet-name>FrontController</servlet-name>
+        <servlet-class>com.worldgate.request.FrontController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FrontController</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+
 </web-app>

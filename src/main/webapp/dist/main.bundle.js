@@ -27,7 +27,7 @@ module.exports = ""
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n  <ul class=\"nav nav-tabs\" style=\"background-color:aliceblue\">\r\n    <li role=\"presentation\" routerLinkActive=\"active\"\r\n                            [routerLinkActiveOptions]=\"{exact: true}\"><a routerLink='/'>Home</a></li>\r\n    <li role=\"presentation\" routerLinkActive=\"active\"><a routerLink='/test-ng'>TestNg</a></li>\r\n    <li role=\"presentation\" routerLinkActive=\"active\"><a routerLink='/cucumber'>Cucumber</a></li>\r\n    <li role=\"presentation\" routerLinkActive=\"active\"><a routerLink='/jasmine'>Jasmine</a></li>\r\n    <li role=\"presentation\" routerLinkActive=\"active\"><a routerLink='/protractor'>Protractor</a></li>\r\n    <li role=\"presentation\" routerLinkActive=\"active\"><a routerLink='/karma'>Karma</a></li>\r\n  </ul>\r\n</div>\r\n<div>\r\n  <router-outlet>\r\n  </router-outlet>\r\n</div>\r\n\r\n"
+module.exports = "<div>\r\n  <ul class=\"nav nav-tabs\" style=\"background-color:aliceblue\">\r\n    <li role=\"presentation\" routerLinkActive=\"active\"\r\n                            [routerLinkActiveOptions]=\"{exact: true}\"><a routerLink='/'>Home</a></li>\r\n    <li role=\"presentation\" routerLinkActive=\"active\"><a routerLink='/test-ng'>TestNg</a></li>\r\n    <li role=\"presentation\" routerLinkActive=\"active\"><a routerLink='/cucumber'>Cucumber</a></li>\r\n    <li role=\"presentation\" routerLinkActive=\"active\"><a routerLink='/jasmine'>Jasmine</a></li>\r\n    <li role=\"presentation\" routerLinkActive=\"active\"><a routerLink='/protractor'>Protractor</a></li>\r\n    <li role=\"presentation\" routerLinkActive=\"active\"><a routerLink='/karma'>Karma</a></li>\r\n    <li role=\"presentation\" routerLinkActive=\"active\"><a routerLink='/bala'>Bala</a></li>\r\n\r\n  </ul>\r\n</div>\r\n<div>\r\n  <router-outlet>\r\n  </router-outlet>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -69,17 +69,18 @@ var AppComponent = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_home_component__ = __webpack_require__("./src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__selenium_selenium_component__ = __webpack_require__("./src/app/selenium/selenium.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__test_ng_test_ng_component__ = __webpack_require__("./src/app/test-ng/test-ng.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cucumber_cucumber_component__ = __webpack_require__("./src/app/cucumber/cucumber.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__jasmine_jasmine_component__ = __webpack_require__("./src/app/jasmine/jasmine.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__protractor_protractor_component__ = __webpack_require__("./src/app/protractor/protractor.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__karma_karma_component__ = __webpack_require__("./src/app/karma/karma.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__("./src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_home_component__ = __webpack_require__("./src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__selenium_selenium_component__ = __webpack_require__("./src/app/selenium/selenium.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__test_ng_test_ng_component__ = __webpack_require__("./src/app/test-ng/test-ng.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__cucumber_cucumber_component__ = __webpack_require__("./src/app/cucumber/cucumber.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__jasmine_jasmine_component__ = __webpack_require__("./src/app/jasmine/jasmine.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__protractor_protractor_component__ = __webpack_require__("./src/app/protractor/protractor.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__karma_karma_component__ = __webpack_require__("./src/app/karma/karma.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bala_bala_component__ = __webpack_require__("./src/app/bala/bala.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -99,14 +100,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+// Servlet Imports
+
+// import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+// import { InMemoryDbService } from 'angular-in-memory-web-api';
 var appRoutes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */] },
-    { path: 'selenium', component: __WEBPACK_IMPORTED_MODULE_7__selenium_selenium_component__["a" /* SeleniumComponent */] },
-    { path: 'test-ng', component: __WEBPACK_IMPORTED_MODULE_8__test_ng_test_ng_component__["a" /* TestNgComponent */] },
-    { path: 'protractor', component: __WEBPACK_IMPORTED_MODULE_11__protractor_protractor_component__["a" /* ProtractorComponent */] },
-    { path: 'karma', component: __WEBPACK_IMPORTED_MODULE_12__karma_karma_component__["a" /* KarmaComponent */] },
-    { path: 'jasmine', component: __WEBPACK_IMPORTED_MODULE_10__jasmine_jasmine_component__["a" /* JasmineComponent */] },
-    { path: 'cucumber', component: __WEBPACK_IMPORTED_MODULE_9__cucumber_cucumber_component__["a" /* CucumberComponent */] }
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */] },
+    { path: 'selenium', component: __WEBPACK_IMPORTED_MODULE_6__selenium_selenium_component__["a" /* SeleniumComponent */] },
+    { path: 'test-ng', component: __WEBPACK_IMPORTED_MODULE_7__test_ng_test_ng_component__["a" /* TestNgComponent */] },
+    { path: 'protractor', component: __WEBPACK_IMPORTED_MODULE_10__protractor_protractor_component__["a" /* ProtractorComponent */] },
+    { path: 'karma', component: __WEBPACK_IMPORTED_MODULE_11__karma_karma_component__["a" /* KarmaComponent */] },
+    { path: 'jasmine', component: __WEBPACK_IMPORTED_MODULE_9__jasmine_jasmine_component__["a" /* JasmineComponent */] },
+    { path: 'cucumber', component: __WEBPACK_IMPORTED_MODULE_8__cucumber_cucumber_component__["a" /* CucumberComponent */] },
+    { path: 'bala', component: __WEBPACK_IMPORTED_MODULE_12__bala_bala_component__["a" /* BalaComponent */] }
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -114,26 +120,78 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__selenium_selenium_component__["a" /* SeleniumComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__test_ng_test_ng_component__["a" /* TestNgComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__cucumber_cucumber_component__["a" /* CucumberComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__jasmine_jasmine_component__["a" /* JasmineComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__protractor_protractor_component__["a" /* ProtractorComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__karma_karma_component__["a" /* KarmaComponent */]
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__selenium_selenium_component__["a" /* SeleniumComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__test_ng_test_ng_component__["a" /* TestNgComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__cucumber_cucumber_component__["a" /* CucumberComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__jasmine_jasmine_component__["a" /* JasmineComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__protractor_protractor_component__["a" /* ProtractorComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__karma_karma_component__["a" /* KarmaComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__bala_bala_component__["a" /* BalaComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(appRoutes)
+                __WEBPACK_IMPORTED_MODULE_13__angular_common_http__["b" /* HttpClientModule */],
+                // HttpClientInMemoryWebApiModule,
+                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */].forRoot(appRoutes),
             ],
             providers: [],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/bala/bala.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/bala/bala.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>bala works!</p>\r\n=======\r\n<p>\r\n  bala works!\r\n</p>\r\n<input>\r\n<a href=\"../cuong/cuong.component.html\">Cuong</a>\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/bala/bala.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BalaComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BalaComponent = /** @class */ (function () {
+    function BalaComponent() {
+    }
+    BalaComponent.prototype.ngOnInit = function () {
+    };
+    BalaComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-bala',
+            template: __webpack_require__("./src/app/bala/bala.component.html"),
+            styles: [__webpack_require__("./src/app/bala/bala.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BalaComponent);
+    return BalaComponent;
 }());
 
 
@@ -150,7 +208,7 @@ module.exports = ""
 /***/ "./src/app/cucumber/cucumber.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"max-width: 1200px; margin: 0 auto; padding: 20px;\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<div>\r\n\t\t\t\t<form style=\"height: 50px\">\r\n\t\t\t\t\t<img class=\"float-left\" src=\"assets/img/Cucumber.png\"\r\n\t\t\t\t\t\talt=\"Cucumber\" style=\"max-height: 100%\">\r\n\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary float-right\">Run\r\n\t\t\t\t\t\tCucumber</button>\r\n\t\t\t\t</form>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n"
+module.exports = "<div style=\"max-width: 1200px; margin: 0 auto; padding: 20px;\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<div>\r\n\t\t\t\t<form style=\"height: 50px\">\r\n\t\t\t\t\t<img class=\"float-left\" src=\"assets/img/Cucumber.png\"\r\n\t\t\t\t\t\talt=\"Cucumber\" style=\"max-height: 100%\">\r\n\t\t\t\t\t<button (click)=\"executeCuke()\" >Run\r\n\t\t\t\t\t\tCucumber</button>\r\n\t\t\t\t</form>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -160,6 +218,7 @@ module.exports = "<div style=\"max-width: 1200px; margin: 0 auto; padding: 20px;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CucumberComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -170,10 +229,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var CucumberComponent = /** @class */ (function () {
-    function CucumberComponent() {
+    function CucumberComponent(http) {
+        this.http = http;
+        this.title = 'pickle';
     }
     CucumberComponent.prototype.ngOnInit = function () {
+    };
+    CucumberComponent.prototype.executeCuke = function () {
+        return this.http.get('cucumber.do').subscribe(function (data) {
+            console.log(data);
+        });
     };
     CucumberComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -181,7 +248,7 @@ var CucumberComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/cucumber/cucumber.component.html"),
             styles: [__webpack_require__("./src/app/cucumber/cucumber.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
     ], CucumberComponent);
     return CucumberComponent;
 }());
