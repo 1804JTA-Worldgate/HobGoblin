@@ -53,14 +53,14 @@ public class profileTabAppear {
 	public void click_any_select_skill_to_add_to_your_current_skill() throws InterruptedException {
 		TimeUnit.SECONDS.sleep(8);
 		dr.findElement(
-				By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[2]/div/md-chips/md-chips-wrap/md-chip[17]/div/span"))
+				By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[2]/div/md-chips/md-chips-wrap/md-chip[1]/div/span"))
 				.click();
 
 		TimeUnit.SECONDS.sleep(5);
 		String currentSkill = dr
-				.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[2]/div/md-list/button[20]")).getText();
+				.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[2]/div/md-list/button[14]/h5")).getText();
 		System.out.println(currentSkill);
-		String addedSkill = "JAVA CORE";
+		String addedSkill = "B";
 
 		if (currentSkill.contains(addedSkill)) {
 			assertFalse(false);
@@ -73,13 +73,13 @@ public class profileTabAppear {
 	@When("^Click any current skill to remove from the list$")
 	public void click_any_current_skill_to_remove_from_the_list() throws InterruptedException {
 		TimeUnit.SECONDS.sleep(5);
-	    String b = dr.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[2]/div/md-list/button[20]/h5")).getText();
+	   // String b = dr.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[2]/div/md-list/button[20]/h5")).getText();
 	    //System.out.println(b);
-	    dr.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[2]/div/md-list/button[20]/h5")).click();
+	    dr.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[2]/div/md-list/button[14]/h5")).click();
 	    
-	    String added = dr.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[2]/div/md-chips/md-chips-wrap/md-chip[33]/div")).getText();
+	    String added = dr.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[2]/div/md-chips/md-chips-wrap/md-chip[23]/div")).getText();
 	    //System.out.println(added);
-	    String current = "Java Core";
+	    String current = "b";
 	    
 	    if(added.contains(current)) {
 	    	assertFalse(false);
@@ -87,10 +87,20 @@ public class profileTabAppear {
 	    	assertFalse(true);
 	    }
 	}
-
+	
+	@When("^upload and remove certificate$")
+	public void upload_and_remove_certificate() throws Throwable {
+		dr.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[3]/md-toolbar/div/label/md-icon")).click();
+	    //dr.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[3]/div/div/div/label")).sendKeys("C:/Users/Bala/Downloads/Webdriver");
+	    TimeUnit.SECONDS.sleep(5);
+	    dr.findElement(By.xpath("//*[@id=\"input_3\"]")).sendKeys("WebDriver");
+	    dr.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[3]/div/div/div/button/span")).click();
+	    TimeUnit.SECONDS.sleep(3);
+	    dr.findElement(By.xpath("//*[@id=\"view\"]/md-card[1]/md-content[3]/div/md-list/md-list-item[2]/button")).click();
+	}
+	
 	@Then("^profile infornmation appear$")
 	public void profile_infornmation_appear() {
-	    
 	    
 	    
 	}
