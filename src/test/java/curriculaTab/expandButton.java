@@ -3,6 +3,10 @@ package curriculaTab;
 import static org.junit.Assert.assertFalse;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -16,37 +20,47 @@ import cucumber.api.java.en.When;
 public class expandButton {
 	WebDriver dr;
 	@Given("^current tab is curricula$")
-	public void current_tab_is_curricula() {
+	public void current_tab_is_curricula() throws IOException {
+		Properties prop = new Properties();
+		InputStream input = null;
+		input = new FileInputStream("src/test/resources/cuong.properties");
+		prop.load(input);
 		File chrome = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 	    dr=new ChromeDriver();
-	    dr.get("https://dev.assignforce.revaturelabs.com");    
-	    dr.findElement(By.xpath("//input[@id='username']")).sendKeys("test.trainer@revature.com.int1");
-	    dr.findElement(By.xpath("//input[@id='password']")).sendKeys("trainer123");
-	    dr.findElement(By.xpath("//input[@id='Login']")).click();
+	    dr.get(prop.getProperty("url"));    
+	    dr.findElement(By.xpath(prop.getProperty("loginUser"))).sendKeys(prop.getProperty("trainerUser"));
+	    dr.findElement(By.xpath(prop.getProperty("loginPass"))).sendKeys(prop.getProperty("trainerPass"));
+	    dr.findElement(By.xpath(prop.getProperty("loginButton"))).click();
 	    try {
 			TimeUnit.SECONDS.sleep(7);
-			dr.findElement(By.xpath("/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[4]/a/span/span")).click();
+			dr.findElement(By.xpath(prop.getProperty("curriculaTab"))).click();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
 
 	@When("^expand buttons are clicked$")
-	public void expand_buttons_are_clicked() throws InterruptedException {
-	       dr.findElement(By.xpath("/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[4]/a/span/span")).click();
+	public void expand_buttons_are_clicked() throws InterruptedException, IOException {
+		Properties prop = new Properties();
+		InputStream input = null;
+		input = new FileInputStream("src/test/resources/cuong.properties");
+		prop.load(input);
 	       TimeUnit.SECONDS.sleep(1);
-	       dr.findElement(By.xpath("//*[@id=\"view\"]/md-card/md-content/md-card[1]/md-toolbar/div/button")).click();
+	       dr.findElement(By.xpath(prop.getProperty("curriculaButton"))).click();
 	       TimeUnit.SECONDS.sleep(1);
-	       dr.findElement(By.xpath("//*[@id=\"view\"]/md-card/md-content/md-card[2]/md-toolbar/div/button")).click();
+	       dr.findElement(By.xpath(prop.getProperty("focusButton"))).click();
 	}
 
 	@Then("^information should expand/collapse$")
-	public void information_should_expand_collapse() {
-		String realtimeCore = dr.findElement(By.xpath("//*[@id=\"coreArrow\"]")).getText();
-	       String realtimeFocus = dr.findElement(By.xpath("//*[@id=\"focusArrow\"]")).getText();
-	       String curriculaCollapsed = "keyboard_arrow_down";
-	       if (realtimeCore.contains(curriculaCollapsed) & realtimeFocus.contains(curriculaCollapsed)) {
+	public void information_should_expand_collapse() throws IOException {
+		Properties prop = new Properties();
+		InputStream input = null;
+		input = new FileInputStream("src/test/resources/cuong.properties");
+		prop.load(input);
+		String realtimeCore = dr.findElement(By.xpath(prop.getProperty("curriculaExpand"))).getText();
+	       String realtimeFocus = dr.findElement(By.xpath(prop.getProperty("focusExpand"))).getText();
+	       if (realtimeCore.contains(prop.getProperty("wantedCollapse")) & realtimeFocus.contains(prop.getProperty("wantedCollapse"))) {
 	    	  assertFalse(false);
 	    	  dr.close();
 	       } else {

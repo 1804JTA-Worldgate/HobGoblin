@@ -3,7 +3,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
-		plugin={"pretty","html:C:/Reports/CurriculaTests"},tags= {"@curriculaTest"},
+		plugin={"progress","html:C:/Reports/CurriculaTests"},tags= {"@curriculaTest"},
 		features = {"C:/revature/webdriver2/src/test/resources/curriculaTest.feature"}
 		)
  

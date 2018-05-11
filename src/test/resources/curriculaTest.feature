@@ -21,3 +21,9 @@ Feature: To test curricula tab is working
  Given navigate to curricula tab as vp
  When curricula tab clicked
  Then skills form default appear
+ 
+ @addSkills
+ Scenario: Add skills as VP
+ Given navigate to curricula as vp
+ When new skill filled out
+ Then add new skills
