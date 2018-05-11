@@ -80,7 +80,7 @@ public class profileTabAppear {
 				.findElement(By.xpath(prop.getProperty("checkskill"))).getText();
 		System.out.println(currentSkill);
 		String addedSkill = "B";
-
+		dr.findElement(By.xpath(prop.getProperty("saveButton"))).click();
 		if (currentSkill.contains(addedSkill)) {
 			assertFalse(false);
 		} else {
@@ -99,12 +99,14 @@ public class profileTabAppear {
 	    dr.findElement(By.xpath(prop.getProperty("checkskill"))).click();
 	    String added = dr.findElement(By.xpath(prop.getProperty("unselect"))).getText();
 	    String current = "b";
-	    
+	    dr.findElement(By.xpath(prop.getProperty("saveButton"))).click();
 	    if(added.contains(current)) {
 	    	assertFalse(false);
 	    }else {
 	    	assertFalse(true);
 	    }
+	    
+	    
 	}
 	
 	@When("^upload and remove certificate$")
@@ -117,7 +119,7 @@ public class profileTabAppear {
 	    TimeUnit.SECONDS.sleep(5);
 	    dr.findElement(By.xpath(prop.getProperty("fileInput"))).sendKeys(prop.getProperty("fileName"));
 	    dr.findElement(By.xpath(prop.getProperty("fileUpdate"))).click();
-	    TimeUnit.SECONDS.sleep(3);
+	    TimeUnit.SECONDS.sleep(5);
 	    dr.findElement(By.xpath(prop.getProperty("removeCertificate"))).click();
 	}
 	
