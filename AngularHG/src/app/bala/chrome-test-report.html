@@ -180,10 +180,10 @@ th {
         <div class="navbar-header">
           <div class="project-name visible-md visible-lg">Test Execution Report</div>
           <div class="label-container">
-            <span class="label label-success" title=TestCases>Passed: 2</span>
-            <span class="label label-danger" title=TestCases>Failed: 0</span>
+            <span class="label label-success" title=TestCases>Passed: 1</span>
+            <span class="label label-danger" title=TestCases>Failed: 2</span>
             <span class="label label-warning" title=TestCases>Skipped: 0</span>
-            <span class="label label-info">Time Elapsed: 0h 0min 7s</span>
+            <span class="label label-info">Time Elapsed: 0h 0min 14s</span>
           </div>
         </div>
       </div>
@@ -193,7 +193,7 @@ th {
 
     <!--<div class="generated-on"><b>Platform:</b> </div>-->
     <div class="info"><b>Browser:</b> chrome 66.0.3359.139</div>
-    <div class="info"><b>Generated on:</b> 2018-5-10 13:30:30</div>
+    <div class="info"><b>Generated on:</b> 2018-5-11 14:52:26</div>
 
 
       <div class="row">
@@ -209,12 +209,13 @@ th {
       <h4 class="panel-title">
           <a data-toggle="collapse" href="#collapseSuite0">
           
-            <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
           
-          <font color="green"><b>TestSuite:</b>Protractor Demo App</font>
+          <font color="red"><b>TestSuite:</b>Testing profile tab</font>
+          
           <span class="label-container">
-            <span class="label label-success">2</span>
-            
+            <span class="label label-success">1</span>
+            <span class="label label-danger">2</span>
             
             
           </span>
@@ -248,7 +249,7 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 1 seconds</font>
+                          <font color="black">Time elapsed: 2 seconds</font>
 
                           
 
@@ -265,16 +266,16 @@ th {
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_1">
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>login crediential</font>
                         
                         
+                        <font color="red"><b>TestCase:</b>login crediential</font>
                         <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
+                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -284,11 +285,69 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 7 seconds</font>
+                          <font color="black">Time elapsed: 4 seconds</font>
 
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">Expected 'Login | Salesforce' to equal 'AssignForce'.</font>
                           
 
                           
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/chrome-Testing profile tab login crediential.png" data-lightbox="chrome-Testing profile tab login crediential.png">
+                              <img src="./screenshots/chrome-Testing profile tab login crediential.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-Testing profile tab login crediential.png"/>
+                            </a>
+                        
+                      
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#collapseTestCase0_2">
+                        
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                        
+
+                        
+                        
+                        <font color="red"><b>TestCase:</b>profile tab</font>
+                        <span class="label-container">
+                          
+                          
+                          <span class="label label-danger" title="Failed">Failed</span>
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div id="collapseTestCase0_2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p class="scenario-container">
+                        
+                          <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
+                          <font color="black">Time elapsed: 9 seconds</font>
+
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">Failed: No element found using locator: By(xpath, /html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[6]/a)</font>
+                          
+
+                          
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/chrome-Testing profile tab profile tab.png" data-lightbox="chrome-Testing profile tab profile tab.png">
+                              <img src="./screenshots/chrome-Testing profile tab profile tab.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-Testing profile tab profile tab.png"/>
+                            </a>
+                        
                       
                       </p>
                     </div>
@@ -330,16 +389,16 @@ th {
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(function() {drawChart({
                                                               "title": "TestSuites",
-                                                              "passed": 1,
-                                                              "failed": 0,
+                                                              "passed": 0,
+                                                              "failed": 1,
         })
       });
       google.charts.setOnLoadCallback(function() {drawChart({
                                                               "title": "TestCases",
-                                                              "passed": 2,
+                                                              "passed": 1,
                                                               "skipped": 0,
                                                               "errors": 0,
-                                                              "failed": 0
+                                                              "failed": 2
         })
       });
 
