@@ -1,4 +1,4 @@
-package com.project2.batches;
+package com.worldgate.test.batchesTab;
 
 import static org.junit.Assert.assertTrue;
 
