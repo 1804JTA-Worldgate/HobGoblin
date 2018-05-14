@@ -6,3 +6,4 @@ public interface BatchDao {
 
     public void insertBatch(Batch batch);
 }
+
